@@ -1,4 +1,4 @@
-# llama3.2-1B-RK3588
+# Complete Guide to Deploying the LLaMA 3.2 1B Model on the RK3588 Orange Pi 5 Plus Development Board
 Complete Guide to Deploying LLaMA 3.2 1B Models to RK3588 Orange Pie 5plus Development Board
 Hello everyone! On September 25th, Meta released the LLaMA 3.2 model, which includes a 1B and 3B small parameter model specifically designed for edge devices. I recently decided to try deploying the LLaMA 3.2 1B model on edge devices for an artificial intelligence competition I'm participating in. I chose the RK3588 chip and used the Orange Pi 5 Plus development board, which comes with 16G of operational memory and is very fast. I successfully deployed it, and both the response speed and quality are quite good. Here is my deployment process, which I hope will be helpful to everyone.
 
