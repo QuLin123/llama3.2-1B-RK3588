@@ -66,7 +66,7 @@ pip install transformers -i https://pypi.tuna.tsinghua.edu.cn/simple
 ## Code Implementation
 Create a new file llama-chat.py.
 The code mainly includes importing the model, tokenizer, setting parameters, and designing multi-round chats. During testing, I encountered an issue with the attention mask not being set, which affected the model's understanding of the input content. Additionally, I found an issue with beam search, where enabling beam search when the parameter is set to 1 is ineffective. Therefore, I modified the num_beams parameter to test the differences between beam search and greedy search.
-'''python
+```python
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
@@ -156,7 +156,7 @@ if __name__ == "__main__":
     main()
 Run the inference code
 python3 llama-chat.py
-'''
+```
 ## Precision and Quantization
 
 I tested the generation speed and quality of the fp32 precision and fp16 precision models. The results show that although the generated content is the same, the speed of fp16 is much faster. In the future, I also plan to perform 8-bit quantization.
