@@ -154,9 +154,10 @@ def main():
 
 if __name__ == "__main__":
     main()
+```
 Run the inference code
 python3 llama-chat.py
-```
+
 ## Precision and Quantization
 
 I tested the generation speed and quality of the fp32 precision and fp16 precision models. The results show that although the generated content is the same, the speed of fp16 is much faster. In the future, I also plan to perform 8-bit quantization.
